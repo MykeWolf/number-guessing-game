@@ -23,7 +23,7 @@ else
   BEST_GAME=1000
 fi
 
-# Generate a random number between 1 and 1000
+# Generate  random number between 1 and 1000
 SECRET_NUMBER=$(( RANDOM % 1000 + 1 ))
 
 # Initialize guess count
