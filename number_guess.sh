@@ -16,7 +16,7 @@ if [[ -n $USER_DATA ]]; then
 else
   # If the user does not exist, insert a new row
   echo "Welcome, $USERNAME! It looks like this is your first time here."
-  INSERT_USER_RESULT=$($PSQL "INSERT INTO details(username, games_played, best_game) VALUES('$USERNAME', 0, 1000)")
+  INSERT_USER_RESULT=$($PSQL "INSERT INTO details(username) VALUES('$USERNAME')")
   USER_ID=$($PSQL "SELECT user_id FROM details WHERE username='$USERNAME'")
   GAMES_PLAYED=0
   BEST_GAME=1000
