@@ -20,6 +20,7 @@ else
   USER_ID=$($PSQL "SELECT user_id FROM details WHERE username='$USERNAME'")
   GAMES_PLAYED=0
   BEST_GAME=1000
+  
 fi
 
 # Generate the secret number between 1 and 1000
